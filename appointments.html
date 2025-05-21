@@ -36,63 +36,68 @@
 
   <!-- Appointments Section -->
   <section class="py-0 bg-white text-center">
-    <div class="background-container"></div>
-    <div class="container mx-auto px-4">
-      <h3 class="text-3xl font-semibold mb-8 brand">Book an Appointment</h3>
-
-      <!-- Grid Layout -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-        <!-- Left Image -->
-        <div>
-          <img src="../images/both_chairs.png" alt="Treatment Image 1" loading="lazy" class="w-full h-[400px] object-contain mx-auto">
-        </div>
-
-        <!-- Center Text -->
-        <div class="space-y-10 px-4 text-center md:text-left">
-          <!-- Hours -->
-          <div>
-            <h3 class="text-2xl font-semibold mb-2 brand">Hours</h3>
-            <ul class="space-y-1 text-lg brand">
-              <li><strong>Tuesday:</strong> 9am – 1pm & 7pm – 9pm</li>
-              <li><strong>Thursday:</strong> 9am – 1pm</li>
-            </ul>
-            <p class="mt-2 text-sm italic logo">*Appointments subject to availability</p>
+    <div class="background-container">
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-semibold mb-8 brand text-center">Book an Appointment</h3>
+  
+        <!-- Flex Layout: column on mobile, row on desktop -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8 text-gray-800">
+          
+          <!-- Left Image -->
+          <div class="w-full md:w-1/3 flex justify-center">
+            <img src="../images/both_chairs.png" alt="Treatment Image 1" loading="lazy" class="w-full max-w-sm h-[400px] object-contain">
           </div>
-
-          <!-- Prices -->
-          <div>
-            <h3 class="text-2xl font-semibold mb-2 brand">Prices</h3>
-            <ul class="space-y-4 text-lg">
-              <li>
-                <p class="brand"><strong>Initial Treatment:</strong> £75</p>
-                <p class="text-sm brand">Booking time: up to 75 mins</p>
-              </li>
-              <li>
-                <p class="brand"><strong>Follow-up Treatment:</strong> £65</p>
-                <p class="text-sm brand">Booking time: up to 60 mins</p>
-              </li>
-            </ul>
-            <p class="mt-4 text-sm italic logo">*£35 cancellation fee applies if under 24 hours</p>
+  
+          <!-- Center Text Content -->
+          <div class="w-full md:w-1/3 text-center space-y-10 px-4">
+            
+            <!-- Hours -->
+            <div>
+              <h3 class="text-2xl font-semibold mb-2 brand">Hours</h3>
+              <ul class="space-y-1 text-lg brand">
+                <li><strong>Tuesday:</strong> 9am – 1pm & 7pm – 9pm</li>
+                <li><strong>Thursday:</strong> 9am – 1pm</li>
+              </ul>
+              <p class="mt-2 text-sm italic logo">*Appointments subject to availability</p>
+            </div>
+  
+            <!-- Prices -->
+            <div>
+              <h3 class="text-2xl font-semibold mb-2 brand">Prices</h3>
+              <ul class="space-y-4 text-lg">
+                <li>
+                  <p class="brand"><strong>Initial Treatment:</strong> £75</p>
+                  <p class="text-sm brand">Booking time: up to 75 mins</p>
+                </li>
+                <li>
+                  <p class="brand"><strong>Follow-up Treatment:</strong> £65</p>
+                  <p class="text-sm brand">Booking time: up to 60 mins</p>
+                </li>
+              </ul>
+              <p class="mt-4 text-sm italic logo">*£35 cancellation fee applies if under 24 hours</p>
+            </div>
+  
+            <!-- Book Button -->
+            <div>
+              <a href="https://www.fresha.com/book-now/rebalance-with-amatsu-dldco74r/all-offer?share&pId=1472272"
+                 target="_blank"
+                 class="inline-block text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300"
+                 style="background-color: #2dada4;">
+                Book Now
+              </a>
+            </div>
           </div>
-
-          <!-- Book Button -->
-          <div>
-            <a href="https://www.fresha.com/book-now/rebalance-with-amatsu-dldco74r/all-offer?share&pId=1472272"
-              target="_blank"
-              class="inline-block text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300"
-              style="background-color: #2dada4;">
-              Book Now
-            </a>
+  
+          <!-- Right Image -->
+          <div class="w-full md:w-1/3 flex justify-center">
+            <img src="../images/new_room2.png" alt="Treatment Image 2" loading="lazy" class="w-full max-w-sm h-[400px] object-contain">
           </div>
-        </div>
-
-        <!-- Right Image -->
-        <div>
-          <img src="../images/new_room2.png" alt="Treatment Image 2" loading="lazy" class="w-full h-[400px] object-contain mx-auto">
+  
         </div>
       </div>
     </div>
   </section>
+  
 
   <!-- Footer -->
   <footer class="bg-white py-8 text-sm text-gray-700">
