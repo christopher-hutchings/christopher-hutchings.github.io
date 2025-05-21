@@ -1,0 +1,53 @@
+.background-container {
+    position: relative;
+    padding: 3rem;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  /* Transparent background image */
+  .background-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/stock-back.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15; /* Adjust transparency */
+    z-index: 0;
+  }
+  
+  /* Ensure the content is on top */
+  .background-container * {
+    position: relative;
+    z-index: 1;
+    color: #333;
+  }
+
+  :root {
+    --my-brand-color: #129bba;
+    --my-brand-hover-color:#0a6a80;
+  }
+
+  .link-brand {
+    color: var(--my-brand-color);
+    transition: color 0.3s;
+  }
+  
+  .link-brand:hover {
+    color: var(--my-brand-hover-color);
+  }
+
+  .logo {
+    color: #2dada4
+  }
+
+  .brand {
+    color: var(--my-brand-color);
+    font-family: aesthet nova;
+  }
+
+  .current_page {
+    color: #0a6a80;
+  }
