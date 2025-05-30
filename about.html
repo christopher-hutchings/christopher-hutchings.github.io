@@ -16,21 +16,29 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="font-sans bg-white text-gray-800">
-  <header class="bg-white shadow-md sticky top-0 z-50 h-18">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row md:justify-between md:items-center">
+    
+    <!-- Logo & Title -->
+    <div class="flex items-center justify-between">
       <a href="index.html">
-        <img src="../images/logo_new.png" alt="Rebalance Amatsu logo" class="h-20 w-auto hover:opacity-80 transition">
+        <img src="../images/logo_new.png" alt="Rebalance Amatsu logo" class="h-16 w-auto hover:opacity-80 transition" />
       </a>
-      <h1 class="text-2xl font-bold brand">Rebalance Amatsu with Hannah</h1>
-      <nav class="space-x-4">
-        <a href="index.html" class="link-brand">Home</a>
-        <a href="about.html" class="font-bold current_page">About</a>
-        <a href="amatsu.html" class="link-brand">What is Amatsu</a>
-        <a href="appointments.html" class="link-brand">Appointments</a>
-        <a href="contact.html" class="link-brand">Contact</a>
-      </nav>
+      <h1 class="text-xl font-bold brand ml-4">Rebalance Amatsu with Hannah</h1>
     </div>
-  </header>
+
+    <!-- Nav links -->
+    <nav class="mt-4 md:mt-0 grid grid-cols-2 gap-x-4 gap-y-2 text-center md:flex md:space-x-4 md:text-left">
+      <a href="index.html" class="link-brand">Home</a>
+      <a href="about.html" class="font-bold current_page">About</a>
+      <a href="amatsu.html" class="link-brand col-span-2">What is Amatsu</a>
+      <a href="appointments.html" class="link-brand">Appointments</a>
+      <a href="contact.html" class="link-brand">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
 
   <section class="py-0 bg-white">
     <div class="background-container">
