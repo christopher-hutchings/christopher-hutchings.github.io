@@ -16,45 +16,50 @@
 </head>
 <body class="font-sans bg-white text-gray-800">
   <header class="bg-white shadow-md sticky top-0 z-50">
-  <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-    <!-- Logo and Title -->
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between relative">
+    
+    <!-- Left: Logo -->
     <div class="flex items-center space-x-4">
       <a href="index.html">
         <img src="../images/logo_new.png" alt="Rebalance Amatsu logo" class="h-16 w-auto hover:opacity-80 transition" />
       </a>
-      <h1 class="text-xl font-bold brand">Rebalance Amatsu with Hannah</h1>
     </div>
+    <h1 class="absolute left-1/2 transform -translate-x-1/2 text-xl md:text-2xl font-bold brand hidden sm:block">
+      Rebalance Amatsu with Hannah
+    </h1>
+    <!-- Right: Nav and Hamburger -->
+    <div class="flex items-center space-x-4">
+      <!-- Hamburger (mobile only) -->
+      <button id="menu-toggle" class="md:hidden text-gray-800 focus:outline-none" aria-label="Toggle menu">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
 
-    <!-- Hamburger Button (visible on mobile only) -->
-<button id="menu-toggle" class="block md:hidden text-gray-800 focus:outline-none" aria-label="Toggle menu">
-  <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-  </svg>
-</button>
-
-    <!-- Desktop Nav -->
-    <nav class="hidden md:flex space-x-4">
-      <a href="index.html" class="link-brand">Home</a>
-      <a href="about.html" class="link-brand">About</a>
-      <a href="amatsu.html" class="link-brand">What is Amatsu</a>
-      <a href="appointments.html" class="link-brand">Appointments</a>
-      <a href="contact.html" class="link-brand">Contact</a>
-    </nav>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-4">
+        <a href="index.html" class="link-brand">Home</a>
+        <a href="about.html" class="link-brand">About</a>
+        <a href="amatsu.html" class="link-brand">What is Amatsu</a>
+        <a href="appointments.html" class="link-brand">Appointments</a>
+        <a href="contact.html" class="link-brand">Contact</a>
+      </nav>
+    </div>
   </div>
 
-  <!-- Mobile Nav (stacked list, initially hidden) -->
-  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
-    <nav class="flex flex-col space-y-3 pt-4 text-center">
-      <a href="index.html" class="link-brand">Home</a>
-      <a href="about.html" class="link-brand">About</a>
-      <a href="amatsu.html" class="link-brand">What is Amatsu</a>
-      <a href="appointments.html" class="link-brand">Appointments</a>
-      <a href="contact.html" class="link-brand">Contact</a>
-    </nav>
+  <!-- Mobile Nav -->
+  <div id="mobile-menu" class="hidden md:hidden flex-col items-start px-4 pb-4 space-y-2 bg-white shadow-md">
+    <a href="index.html" class="link-brand block">Home</a>
+    <a href="about.html" class="link-brand block">About</a>
+    <a href="amatsu.html" class="link-brand block">What is Amatsu</a>
+    <a href="appointments.html" class="link-brand block">Appointments</a>
+    <a href="contact.html" class="link-brand block">Contact</a>
   </div>
+</header>
+
 
   <!-- Toggle Script -->
-  <script>
+ <script>
     const toggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('mobile-menu');
 
@@ -63,8 +68,6 @@
     });
   </script>
 </header>
-
-
   <section class="py-0 bg-gray-50 text-center">
     <div class="background-container">
     <div class="container mx-auto px-4">
