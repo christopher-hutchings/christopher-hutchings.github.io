@@ -15,21 +15,55 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="font-sans bg-white text-gray-800">
-  <header class="bg-white shadow-md sticky top-0 z-50 h-18">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <!-- Logo and Title -->
+    <div class="flex items-center space-x-4">
       <a href="index.html">
-        <img src="../images/logo_new.png" alt="Rebalance Amatsu logo" loading="lazy" class="h-20 w-auto hover:opacity-80 transition">
+        <img src="../images/logo_new.png" alt="Rebalance Amatsu logo" class="h-16 w-auto hover:opacity-80 transition" />
       </a>
-      <h1 class="text-2xl font-bold brand">Rebalance Amatsu with Hannah</h1>
-      <nav class="space-x-4">
-        <a href="index.html" class="link-brand">Home</a>
-        <a href="about.html" class="link-brand">About</a>
-        <a href="amatsu.html" class="font-bold current_page">What is Amatsu</a>
-        <a href="appointments.html" class="link-brand">Appointments</a>
-        <a href="contact.html" class="link-brand">Contact</a>
-      </nav>
+      <h1 class="text-xl font-bold brand">Rebalance Amatsu with Hannah</h1>
     </div>
-  </header>
+
+    <!-- Hamburger Icon -->
+    <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle menu">
+      <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-4">
+      <a href="index.html" class="link-brand">Home</a>
+      <a href="about.html" class="font-bold current_page">About</a>
+      <a href="amatsu.html" class="link-brand">What is Amatsu</a>
+      <a href="appointments.html" class="link-brand">Appointments</a>
+      <a href="contact.html" class="link-brand">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Nav (initially hidden) -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+    <nav class="grid grid-cols-2 gap-x-4 gap-y-2 text-center">
+      <a href="index.html" class="link-brand">Home</a>
+      <a href="about.html" class="font-bold current_page">About</a>
+      <a href="amatsu.html" class="col-span-2 link-brand">What is Amatsu</a>
+      <a href="appointments.html" class="link-brand">Appointments</a>
+      <a href="contact.html" class="link-brand">Contact</a>
+    </nav>
+  </div>
+
+  <!-- JavaScript for toggle -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</header>
+
   <section class="py-0 bg-gray-50 text-center">
     <div class="background-container">
     <div class="container mx-auto px-4">
