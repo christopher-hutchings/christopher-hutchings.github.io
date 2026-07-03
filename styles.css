@@ -18,11 +18,20 @@
     z-index: 0;
   }
   
+  /* Dark mode: darker overlay for background container */
+  html.dark .background-container::before {
+    opacity: 0.08;
+  }
+  
   /* Ensure the content is on top */
   .background-container * {
     position: relative;
     z-index: 1;
     color: #333;
+  }
+
+  html.dark .background-container * {
+    color: #e2e8f0;
   }
 
   :root {
@@ -39,6 +48,15 @@
     color: var(--my-brand-hover-color);
   }
 
+  /* Dark mode link brand */
+  html.dark .link-brand {
+    color: #3ec8c0;
+  }
+
+  html.dark .link-brand:hover {
+    color: #5eddd5;
+  }
+
   .logo {
     color: #2dada4
   }
@@ -48,6 +66,29 @@
     font-family: aesthet nova;
   }
 
+  /* Dark mode brand text */
+  html.dark .brand {
+    color: #3ec8c0;
+  }
+
   .current_page {
     color: #0a6a80;
+  }
+
+  /* Dark mode form styles */
+  html.dark form.shadow-md {
+    background-color: #1e293b;
+    border-color: #334155;
+  }
+
+  html.dark form input,
+  html.dark form textarea {
+    background-color: #0f172a;
+    border-color: #475569;
+    color: #e2e8f0;
+  }
+
+  html.dark form input::placeholder,
+  html.dark form textarea::placeholder {
+    color: #94a3b8;
   }
